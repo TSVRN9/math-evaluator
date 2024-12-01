@@ -3,7 +3,7 @@
 
 [Demo using WASM](https://owenwang.dev/math-evaluator)
 
-I'm learning Rust and some basic parsing!!!
+I'm learning Rust and some basic parsing!!! Something like a LR, depth first? Still working on the terminology...
 A little boring? Maybe... but we all start somewhere.
 
 This is just a simple math evaluator, which can handle parentheses and basic arithmetic.
