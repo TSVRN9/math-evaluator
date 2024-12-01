@@ -1,5 +1,5 @@
 # Math Evaulator
-![Picture of a simple website using the package](./baby-site.png)
+![Picture of a simple website using the package](https://raw.githubusercontent.com/TSVRN9/math-evaluator/refs/heads/main/baby-site.png)
 
 [Demo using WASM](https://owenwang.dev/math-evaluator)
 
