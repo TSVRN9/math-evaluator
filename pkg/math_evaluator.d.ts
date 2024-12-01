@@ -1,12 +1,12 @@
 /* tslint:disable */
 /* eslint-disable */
-export function eval(s: string): number | undefined;
+export function evaluate(s: string): number | undefined;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
-  readonly eval: (a: number, b: number, c: number) => void;
+  readonly evaluate: (a: number, b: number, c: number) => void;
   readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
   readonly __wbindgen_malloc: (a: number, b: number) => number;
   readonly __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;

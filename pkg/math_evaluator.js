@@ -77,12 +77,12 @@ function getDataViewMemory0() {
  * @param {string} s
  * @returns {number | undefined}
  */
-export function eval(s) {
+export function evaluate(s) {
     try {
         const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
         const ptr0 = passStringToWasm0(s, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
         const len0 = WASM_VECTOR_LEN;
-        wasm.eval(retptr, ptr0, len0);
+        wasm.evaluate(retptr, ptr0, len0);
         var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
         var r2 = getDataViewMemory0().getFloat64(retptr + 8 * 1, true);
         return r0 === 0 ? undefined : r2;

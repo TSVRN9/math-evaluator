@@ -7,16 +7,54 @@
     </head>
     <body>
         <div id="container">
-            <input type="text"></input>
+            <h1>A Simple Math Evaluator</h1>
+            <p>
+                Made in Rust 🔥🔥🔥🔥 Check it out on
+                <a href="https://github.com/TSVRN9/math-evaluator">Github</a>!!
+            </p>
+            <div id="eval">
+                <input id="input" type="text" />
+                <span id="display">Type Something!</span>
+            </div>
         </div>
     </body>
     <script type="module">
-        import math_evaluator from './pkg/math_evaluator.js';
-        console.log(math_evaluator.eval("1+3"))
+        import init, { evaluate } from "./pkg/math_evaluator.js";
+        init().then(() => {
+            document
+                .querySelector("#input")
+                .addEventListener("keyup", (event) => {
+                    const input = document.querySelector("#input").value;
+                    console.log(input);
+                    let display = document.querySelector("#display");
+
+                    if (input === "") {
+                        display.innerText = "Type something!";
+                    } else {
+                        try {
+                            const result = evaluate(input);
+                            if (result === undefined) throw new Error();
+                            display.innerText = result;
+                        } catch (e) {
+                            display.innerText = "Invalid Input";
+                        }
+                    }
+                });
+        });
     </script>
     <style>
-        #container {
-            margin: auto;
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0;
+        }
+
+        #eval {
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </html>
