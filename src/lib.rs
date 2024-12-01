@@ -4,7 +4,7 @@ use models::*;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
-pub fn eval(s: &str) -> Option<f64> {
+pub fn evaluate(s: &str) -> Option<f64> {
     let tokens = tokenize(s);
 
     if let Some(tokens) = tokens {
