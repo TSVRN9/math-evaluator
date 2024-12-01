@@ -1,4 +1,8 @@
 # Math Evaulator
+![Picture of a simple website using the package](./baby-site.png)
+
+[Demo using WASM](https://owenwang.dev/math-evaluator)
+
 I'm learning Rust and some basic parsing!!!
 A little boring? Maybe... but we all start somewhere.
 
