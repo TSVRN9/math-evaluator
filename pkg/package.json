@@ -1,0 +1,15 @@
+{
+  "name": "math-evaluator",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "math_evaluator_bg.wasm",
+    "math_evaluator.js",
+    "math_evaluator.d.ts"
+  ],
+  "main": "math_evaluator.js",
+  "types": "math_evaluator.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
